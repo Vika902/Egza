@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="IT.png" class="">
+        <ul class="link-group">
+            <li class="link active"><a href="#">home</a></li>
+            <li class="link"><a href="#">Usługi</a></li>
+            <li class="link"><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <nav class="image"><img src='USLUGI.png'></nav>
+    <h1>Kontakt</h1>
+    <form onsubmit="alert('submit!');return false">
+    <label>Imie</label><br>
+    <input id="textInput"><br>
+    <label>Nazwisko</label><br>
+    <input id="textInput"><br>
+    <label>E-mail</label><br>
+    <input type="email" id="textInput"><br>
+    <label>Opowieść</label><br>
+    <textarea id="textInput"></textarea><br>
+    <input type="checkbox" id="textInput">
+    <label>Zapoznałem się z regulaminem</label><br>
+    <button type="reset" class="clear-button">Resetuj</button>      <button>Prześli</button></form><hr>
+    <h4>ANNA NOWAK<br>
+        Treść Sprawy:Kiedy mogę odebrać sprzęt
+    </h4>
+    <h4 class="Autor">Autor:Panchenko V</h4>
+    <script href="javascript.js">
+    document.querySelectorAll(".clear-button")
+        forEach(function (elem) {
+          elem.onclick = function (e) {
+            let selector = this.dataset.clearSelector;
+            document.querySelectorAll(selector)
+            .forEach(function (item) {
+              item.value = "";
+            });
+          };
+        });
+       
+      
+      </script>
+</body>
+</html>
